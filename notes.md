@@ -8,3 +8,11 @@ peer dependencies -> install them
 this error blocks everything else...
 deleting vuepress for now...
 // 2022-10-26
+
+
+---
+Ensure all environment variables are correctly included in cache keys (no-undeclared-env-vars)
+
+.env
+
+https://github.com/vercel/turbo/blob/main/packages/eslint-plugin-turbo/docs/rules/no-undeclared-env-vars.md

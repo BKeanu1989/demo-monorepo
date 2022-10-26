@@ -36,3 +36,6 @@ yarn-error.log*
 # vuepress
 .temp
 .cache
+
+# server
+apps/server/dist
