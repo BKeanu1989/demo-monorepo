@@ -1,6 +1,6 @@
 import dotenv from 'dotenv'
-dotenv.config()
-console.log("process env", process.env)
+import path from 'path'
+dotenv.config({ path: path.join(__dirname, '..', '..', '..', '.env') })
 import express from "express";
 import { PrismaClient } from "@prisma/client";
 import { faker } from '@faker-js/faker';
@@ -47,4 +47,6 @@ app.get("/user", async (req, res) => {
 //   res.json(user);
 // });
 
-const server = app.listen(process.env.SERVER_PORT);
+const server = app.listen(process.env.SERVER_PORT, () => {
+  console.log(`Server listening on http://localhost:${process.env.SERVER_PORT}`)
+});

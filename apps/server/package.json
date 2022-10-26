@@ -2,7 +2,8 @@
   "name": "server",
   "scripts": {
     "dev": "node dist/main.js",
-    "build": "tsc"
+    "build": "tsc",
+    "build:watch": "tsc -w"
   },
   "dependencies": {
     "@faker-js/faker": "^7.6.0",
